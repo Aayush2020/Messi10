@@ -1,0 +1,100 @@
+<html>
+<head>
+	<title>GOD</title>
+	<link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+		<h1 id="GOD">
+			<img src="logo.png" height=100>
+		</h1>
+
+			<div class="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="honors.html">Honors</a></li>
+			<li><a href="gallery.html" target="_blank">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+			</div>
+		</div>
+	</header>
+<main>
+	<div class="hero container">
+
+		<div class="image" id="image" style="background-image: url('background.jpg');">
+		</div>
+		<div class="container messi">
+
+		<div class="text">
+		<h1>
+			LIONEL
+		</h1>
+		<img src="1.png">
+		<p>King of Catalunya
+		</p>
+		</div>
+
+		</div>
+	</div>
+	<div class="info container">
+		<p>
+		Lionel Andrés Messi born 24 June 1987, is an Argentine professional footballer who plays as a forward and captains both La Liga club Barcelona and the Argentina national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Messi has won a record six Ballon d'Or awards, and a record six European Golden Shoes. He has spent his entire professional career with Barcelona, where he has won a club-record 33 trophies, including ten La Liga titles, four UEFA Champions League titles and six Copas del Rey. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (444), a La Liga and European league season (50), most hat-tricks in La Liga and the UEFA Champions League (8), and most assists in La Liga (183), a La Liga and European league season (21) and the Copa América (12). He has scored over 700 senior career goals for club and country.
+		</p>
+		<img src="potrait.jpg" alt="GOAT" align="right">
+		
+	</div>
+
+</main>
+<footer>
+	<div class="container">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="honors.html">Honors</a></li>
+			<li><a href="gallery.html" target="_blank">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<p>
+			&copy; Copyright Aayush Khanal and Messi 2020. All rights reserved.
+		</p>
+	</div>
+	
+</footer>
+<script type="text/javascript">
+	var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+	 
+// Image List
+
+images[0] = "url('background.jpg')";
+images[1] = "url('messi1.jpg')";
+images[2] = "url('messi3.webp')";
+images[3] = "url('messi4.jpg')";
+images[4] = "url('messi2.jpg')";
+
+// Change Image
+function changeImg(){
+	document.getElementById('image').style.backgroundImage = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+</script>
+</body>

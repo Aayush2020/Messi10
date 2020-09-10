@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Explore
+	</title>
+	<link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+		<h1 id="GOD">
+			<img src="logo.png" height=100>
+		</h1>
+
+			<div class="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="honors.html">Honors</a></li>
+			<li><a href="gallery.html" target="_blank">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+
+	<div class="big">
+
+		<img src="fam2.jpg" id="bigImage" width="100%">
+		<span id="altText">
+			Done for the day
+		</span>
+		</div>
+		<div class="small">
+			<img src="ball1.png" onclick="openImg(this)" width="200" alt="Done for the day">
+			<img src="fam.jpg" onclick="openImg(this)" width="200" alt="With family">
+			<img src="thiago.jpg" onclick="openImg(this)" width="200" alt="With son">
+			<img src="fam2.jpg" onclick="openImg(this)" width="200" alt="With family">
+			<img src="run.jpg" onclick="openImg(this)" width="200" alt="Training">
+			<img src="thiago2.jpg" onclick="openImg(this)" width="200" alt="With sons">
+		
+		</div>
+	</div>
+	</main>
+	<footer>
+		<div class="container">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="honors.html">Honors</a></li>
+			<li><a href="gallery.html" target="_blank">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<p>
+			&copy; Copyright Aayush Khanal and Messi 2020. All rights reserved.
+		</p>
+		</div>
+	</footer>
+	<script type="text/javascript">
+		function openImg(img) {
+			let bigImage=document.getElementById('bigImage')
+			let altText=document.getElementById('altText')
+			bigImage.src=img.src
+			altText.innerHTML=img.alt
+
+		}
+	</script>
+</body>
+</html>
